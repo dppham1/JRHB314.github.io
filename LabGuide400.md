@@ -21,11 +21,11 @@ In this part of the lab, we'll learn a bit about how Graph Databases work, and s
 
 # Lab 400
 
-## Connecting VBCS to a Graph Database (Neo4j) check
+## Connecting VBCS to a Graph Database (Neo4j) check2
 
 ### **STEP 1**: Set Up Neo4j Database
 
-<h3> Make a GrapheneDB Account and Database </h3>
+<h4> Make a GrapheneDB Account and Database </h4>
   <br>
   
   GrapheneDB is an easy way to get up and running with Neo4j, with a free sandbox trial. <br> Visit [Graphene DB](https://app.graphenedb.com/) and sign up for an account. Login to the dashboard, then click `Create Database`.
