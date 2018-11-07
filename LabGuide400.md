@@ -31,6 +31,7 @@ In this part of the lab, we'll learn a bit about how Graph Databases work, and s
 check
 
   <br>
+  check
   
   GrapheneDB is an easy way to get up and running with Neo4j, with a free sandbox trial. <br> Visit [Graphene DB](https://app.graphenedb.com/) and sign up for an account. Login to the dashboard, then click `Create Database`.
   
