@@ -25,7 +25,6 @@ In this part of the lab, we'll learn a bit about how Graph Databases work, and s
 
 ### **STEP 1**: Set Up Neo4j Database
 
-<h3> Make a GrapheneDB Account and Database </h3>
 
 #### Make a GrapheneDB Account and Database
 
