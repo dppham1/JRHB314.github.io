@@ -21,7 +21,7 @@ This lab will start with creating your first Web App in VBCS.
 
 # Lab 100
 
-## VBCS: Creating Your First Web App
+## VBCS: Creating Your First Web App 
 
 ### **STEP 1**: Getting Started
 
