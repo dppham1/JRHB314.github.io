@@ -1,7 +1,7 @@
 ![](images/Picture-lab400.png)  
 Updated: November 6, 2018
 
-## Introduction
+## Introduction check3
 
 In this part of the lab, we'll learn a bit about how Graph Databases work, and see how to integrate them with VBCS. Specifically, we'll be using a free Graph Database called Neo4j.
 
@@ -21,7 +21,7 @@ In this part of the lab, we'll learn a bit about how Graph Databases work, and s
 
 # Lab 400
 
-## Connecting VBCS to a Graph Database (Neo4j) check2
+## Connecting VBCS to a Graph Database (Neo4j)
 
 ### **STEP 1**: Set Up Neo4j Database
 
