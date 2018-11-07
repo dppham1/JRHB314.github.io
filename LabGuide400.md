@@ -21,17 +21,12 @@ In this part of the lab, we'll learn a bit about how Graph Databases work, and s
 
 # Lab 400
 
-## Connecting VBCS to a Graph Database (Neo4j)
+## Connecting VBCS to a Graph Database (Neo4j) check
 
 ### **STEP 1**: Set Up Neo4j Database
 
-
-
 <h3> Make a GrapheneDB Account and Database </h3>
-check
-
   <br>
-  check
   
   GrapheneDB is an easy way to get up and running with Neo4j, with a free sandbox trial. <br> Visit [Graphene DB](https://app.graphenedb.com/) and sign up for an account. Login to the dashboard, then click `Create Database`.
   
@@ -62,13 +57,9 @@ check
   
   ![](/images/david-gdb-6.png)<br>
 <br>
-  
-  
-</details>
 
 
-<details>
-  <summary> (optional) GrapheneDB Interface </summary>
+<h3> GrapheneDB Interface </h3>
   <br>
   ADD A RUN DOWN OF GRAPHENEDB TABS etc
   
@@ -76,11 +67,10 @@ check
 ### **STEP 2**: Working with Neo4j
 
 
-<details>
-  <summary> (optional) Getting Familiar with Cypher Statements </summary>
+<h3> (optional) Getting Familiar with Cypher Statements </h3>
   <br>
   
-  <b>Note</b>: You can skip this section and jump to the next if you are already know how graph databases work.<br>
+  <b>Note</b>: You can skip this section and jump to the next if you are already familiar with Cypher or graph databases.<br>
 
   In graph databases, there are `Nodes` and `Relationships`. Neo4j uses a language called Cypher to interact with its databases, rather than the SQL statements of relational databases. Nodes are enclosed in parantheses to resemble circles, and relationships are described using arrows. For this example, we'll create a database of users, where each user can "follow" another user (think Instagram). Copy and paste this Cypher statement in the top console bar:
   
@@ -167,11 +157,8 @@ Great! Everything looks correct. Now let's say that we want userC to be followed
   ```
     MATCH (n) OPTIONAL MATCH (n)-[r]-() DELETE n,r
   ```
-</details>
 
-
-<details>
-  <summary> Create User Relationships </summary>
+  <h3> Create User Relationships </h3>
   <br>
   
   Let's create a user named Rachel Webb. Then, let's create some people that follow her:
@@ -234,11 +221,8 @@ Great! Everything looks correct. Now let's say that we want userC to be followed
  Maria wasn't created as one of Rachel's followers. However, she still exists by this point. This is because the `MERGE` command created her as one of Jacque's followers. That's the power of MERGE--it won't create a duplicate, but it will create an element if it doesn't exist. <br>
  
   Also note that there is no command for userH (BobFlinstone). Bob has no followers, so we don't need to create any. Poor Bob.<br>
-</details>
 
-
-<details>
-  <summary> Add Additional User Information </summary>
+  <h3> Add Additional User Information </h3>
   <br>
   
   Next, we'll want to add a little more detail to these users. We'll add a profile picture and a quote for each user. Again, go to the resources folder in this directory, this time copying and pasting the code from the AddInformation file.<br>
@@ -264,8 +248,7 @@ First we MATCH "n" to the node with name "UserName". Then we use SET to add thes
 ### **STEP 3**: Show User Profile Info on VBCS
 
 
-<details>
-  <summary> Set up Page </summary>
+<h3> Set up Page </h3>
   <br>
   
   Let's go ahead and create an entirely new web app, as this lab does not relate to our Library website. Click the computer icon on the far left, then hit the plus sign next to Web Apps. Name it whatever you like.<br>
@@ -302,11 +285,8 @@ Next we need to create some String variables to be bound to our components.<br>
 ![](/images/4-17.png)<br>
 Note that "count"s disappeared. Since those variables don't have a default value, they start out as empty Strings.<br>
 <br>
-</details>
 
-
-<details>
-  <summary> Create Service Connection </summary>
+  <h3> Create Service Connection </h3>
   <br>
  
   We are ready to set up our Service Connection. In Lab 300 we called the REST endpoint in our Javascript, but VBCS actually offers a nice feature to make REST calls without (much) coding. On the far left, hit the icon that looks like a wire with a bump in it (the third from the top) and then hit the plus sign to create a new Service Connection. Choose Define by Endpoint.<br>
@@ -408,13 +388,11 @@ Drag `image` on the left to `imageURL` on the right, `name` on the left to `user
 Test your website! Enter in AprilGold for the username, then hit search. You should see this:<br>
 ![](/images/4-29.png)<br>
 <br>
-</details>
 
 
 ### **STEP 4**: Show User's Follower, Following, and Mutuals
 
-<details>
-  <summary> Followers, Following, and Mutuals Count </summary>
+<h3> Followers, Following, and Mutuals Count </h3>
   <br>
   Now we want to be able to return a) the count of followers/following/mutuals and b) the list of followers/following/mutuals. <br>
 Let's start with the count. We're going to have to make another Service Connection, even though we are using the same URL, because our request and response bodies will be formatted differently. Make a new Service Connection, copy and paste your Database REST endpoint URL /transaction/commit into the URL, set method to POST, and hit next. <br>
@@ -487,10 +465,7 @@ Test your webpage: it should be working!<br>
 ![](images/4-37.png) <br>
 <br> 
   
-</details>
-
-<details>
-  <summary> Set Up Page for Listing Relationships </summary>
+  <h3> Set Up Page for Listing Relationships </h3>
   <br>
   
   Now, we want to list the Follower, Following, and Mutual users when the corresponding word on the page is clicked. First, however, we have to do some more page set up. <br>
@@ -531,10 +506,7 @@ Back to Code view once more, let's add our onClickListeners. <br>
 ![](/images/lab400/4-45.png)<br>
 <br>
 
-</details>
-
-<details>
-  <summary> Followers, Following, and Mutuals Listed </summary>
+  <h3> Followers, Following, and Mutuals Listed </h3>
   <br>
   
   This page needs one last Service Connection. Create a `Neo4j Relationship List` connection, with the same settings as before except for Request and Response.<br>
@@ -668,4 +640,3 @@ All right, let's test it out. Enter in a username and hit search. Then try click
 <br>
 
 You are now done with the lab.
-</details>
