@@ -59,7 +59,7 @@ In this part of the lab, we'll learn a bit about how Graph Databases work, and s
 <br>
 
 
-<h3> GrapheneDB Interface </h3>
+<b> GrapheneDB Interface </b>
   <br>
   ADD A RUN DOWN OF GRAPHENEDB TABS etc
   
@@ -67,7 +67,7 @@ In this part of the lab, we'll learn a bit about how Graph Databases work, and s
 ### **STEP 2**: Working with Neo4j
 
 
-<h3> (optional) Getting Familiar with Cypher Statements </h3>
+<b> (optional) Getting Familiar with Cypher Statements </b>
   <br>
   
   <b>Note</b>: You can skip this section and jump to the next if you are already familiar with Cypher or graph databases.<br>
@@ -158,7 +158,7 @@ Great! Everything looks correct. Now let's say that we want userC to be followed
     MATCH (n) OPTIONAL MATCH (n)-[r]-() DELETE n,r
   ```
 
-  <h3> Create User Relationships </h3>
+  <b> Create User Relationships </b>
   <br>
   
   Let's create a user named Rachel Webb. Then, let's create some people that follow her:
@@ -222,7 +222,7 @@ Great! Everything looks correct. Now let's say that we want userC to be followed
  
   Also note that there is no command for userH (BobFlinstone). Bob has no followers, so we don't need to create any. Poor Bob.<br>
 
-  <h3> Add Additional User Information </h3>
+  <b> Add Additional User Information </b>
   <br>
   
   Next, we'll want to add a little more detail to these users. We'll add a profile picture and a quote for each user. Again, go to the resources folder in this directory, this time copying and pasting the code from the AddInformation file.<br>
@@ -248,7 +248,7 @@ First we MATCH "n" to the node with name "UserName". Then we use SET to add thes
 ### **STEP 3**: Show User Profile Info on VBCS
 
 
-<h3> Set up Page </h3>
+<b> Set up Page </b>
   <br>
   
   Let's go ahead and create an entirely new web app, as this lab does not relate to our Library website. Click the computer icon on the far left, then hit the plus sign next to Web Apps. Name it whatever you like.<br>
@@ -286,7 +286,7 @@ Next we need to create some String variables to be bound to our components.<br>
 Note that "count"s disappeared. Since those variables don't have a default value, they start out as empty Strings.<br>
 <br>
 
-  <h3> Create Service Connection </h3>
+  <b> Create Service Connection </b>
   <br>
  
   We are ready to set up our Service Connection. In Lab 300 we called the REST endpoint in our Javascript, but VBCS actually offers a nice feature to make REST calls without (much) coding. On the far left, hit the icon that looks like a wire with a bump in it (the third from the top) and then hit the plus sign to create a new Service Connection. Choose Define by Endpoint.<br>
@@ -392,7 +392,7 @@ Test your website! Enter in AprilGold for the username, then hit search. You sho
 
 ### **STEP 4**: Show User's Follower, Following, and Mutuals
 
-<h3> Followers, Following, and Mutuals Count </h3>
+<b> Followers, Following, and Mutuals Count </b>
   <br>
   Now we want to be able to return a) the count of followers/following/mutuals and b) the list of followers/following/mutuals. <br>
 Let's start with the count. We're going to have to make another Service Connection, even though we are using the same URL, because our request and response bodies will be formatted differently. Make a new Service Connection, copy and paste your Database REST endpoint URL /transaction/commit into the URL, set method to POST, and hit next. <br>
@@ -465,7 +465,7 @@ Test your webpage: it should be working!<br>
 ![](images/4-37.png) <br>
 <br> 
   
-  <h3> Set Up Page for Listing Relationships </h3>
+  <b> Set Up Page for Listing Relationships </b>
   <br>
   
   Now, we want to list the Follower, Following, and Mutual users when the corresponding word on the page is clicked. First, however, we have to do some more page set up. <br>
@@ -506,7 +506,7 @@ Back to Code view once more, let's add our onClickListeners. <br>
 ![](/images/lab400/4-45.png)<br>
 <br>
 
-  <h3> Followers, Following, and Mutuals Listed </h3>
+  <b> Followers, Following, and Mutuals Listed </b>
   <br>
   
   This page needs one last Service Connection. Create a `Neo4j Relationship List` connection, with the same settings as before except for Request and Response.<br>
