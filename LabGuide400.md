@@ -25,8 +25,10 @@ In this part of the lab, we'll learn a bit about how Graph Databases work, and s
 
 ### **STEP 1**: Set Up Neo4j Database
 
-<details>
-  <summary> Make a GrapheneDB Account and Database </summary>
+<h3> Make a GrapheneDB Account and Database <h3>
+
+#### Make a GrapheneDB Account and Database
+
   <br>
   
   GrapheneDB is an easy way to get up and running with Neo4j, with a free sandbox trial. <br> Visit [Graphene DB](https://app.graphenedb.com/) and sign up for an account. Login to the dashboard, then click `Create Database`.
@@ -68,7 +70,6 @@ In this part of the lab, we'll learn a bit about how Graph Databases work, and s
   <br>
   ADD A RUN DOWN OF GRAPHENEDB TABS etc
   
-</details>
 
 ### **STEP 2**: Working with Neo4j
 
